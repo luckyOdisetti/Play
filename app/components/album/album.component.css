@@ -1,25 +1,20 @@
-.artist-thumb {
-        width: 150px;
-        float: right;
-        margin-right: 10px;
-    }
 
-.label{
+/*.label{
     margin-right: 5px;
-}
-
+}*/
+/*
 .artist-header{
     padding-bottom:20px;
     margin-bottom:20px;
     border-bottom:solid 1px #eaeef2;
     min-height: 200px;
-}
-
+}*/
+/*
 .artist-albums .well{
     margin-bottom:20px;
     overflow:auto;
     min-height: 350px;
-}
+}*/
 
 .album{
     text-align:center;

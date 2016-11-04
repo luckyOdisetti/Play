@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SearchComponent} from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
 import { ArtistComponent } from './components/artist/artist.component';
+import { AlbumComponent } from './components/album/album.component';
 import { SpotifyService } from './services/spotify.service';
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
@@ -17,7 +18,8 @@ import { HttpModule } from '@angular/http';
                   NavbarComponent,
                   SearchComponent,
                   AboutComponent,
-                  ArtistComponent ],
+                  ArtistComponent,
+                  AlbumComponent ],
   providers: [SpotifyService, {provide: LocationStrategy, useClass: HashLocationStrategy} ],                
   bootstrap:    [ AppComponent ]
 })

@@ -1,7 +1,7 @@
 <div *ngIf="artist">
     <header class="artist-header">
         <div *ngIf="artist.images.length > 0">
-            <img class="artist-thumb" src={{artist.images[0].url}}>
+            <img class="artist-thumb img-circle" src={{artist.images[0].url}}>
         </div>
         <h1>{{artist.name}}</h1>
         <p *ngIf="artist.genres.length > 0">
@@ -14,11 +14,10 @@
         <div class="row">
             <div *ngFor="let album of albums">
                 <div class="col-md-3 album well">
-                    <a routerLink="album/{{album.id}}">
+                    <a routerLink="/album/{{album.id}}">
                     <img class="album-thumb img-thumbnail" src="{{album.images[0].url}}">
                     <strong>{{album.name}}</strong>
                     </a>
-                    <!--<a class="btn btn-default btn-inline" routerLink="album/{{album.id}}">Album Details</a>-->
                 </div>
             </div>
         </div>
