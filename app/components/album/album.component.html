@@ -4,10 +4,10 @@
             <div class="col-md-4">
                 <img class="album-thumb" src="{{album.images[0].url}}">
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 container">
                 <h2>{{album.name}}</h2>
                 <div *ngFor="let song of album.tracks.items">
-                    <div class="container">
+                    <div>
                         <a href="{{song.preview_url}}" target="_blank">{{song.name}}</a>
                     </div>
                 </div>
