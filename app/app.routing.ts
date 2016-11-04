@@ -3,15 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 
 import {SearchComponent} from './components/search/search.component';
 import {AboutComponent} from './components/about/about.component';
+import {ArtistComponent} from './components/artist/artist.component';
 
 const appRoutes: Routes = [
     {
         path:'',
-        component:SearchComponent
+        component: SearchComponent
     },
     {
         path:'about',
-        component:AboutComponent
+        component: AboutComponent
+    },
+    {
+        path: 'artist/:id',
+        component: ArtistComponent
     }
 ];
 
